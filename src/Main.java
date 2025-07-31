@@ -35,27 +35,29 @@ public class Main {
 
         Dev devCamila = new Dev();
         devCamila.setNome("Camila");
+        devCamila.setId(0);
         devCamila.inscreverBootcamp(bootcamp);
-        System.out.println("Conteúdos Inscritos Camila:" + devCamila.getConteudosInscritos());
+        System.out.println("Conteúdos Inscritos Camila:" + devCamila.getConteudosInscritos() + " Id do aluno:" + devCamila.getId());
         devCamila.progredir();
         devCamila.progredir();
         System.out.println("-");
-        System.out.println("Conteúdos Inscritos Camila:" + devCamila.getConteudosInscritos());
-        System.out.println("Conteúdos Concluídos Camila:" + devCamila.getConteudosConcluidos());
+        System.out.println("Conteúdos Inscritos Camila:" + devCamila.getConteudosInscritos() + " Id do aluno:" + devCamila.getId());
+        System.out.println("Conteúdos Concluídos Camila:" + devCamila.getConteudosConcluidos() + " Id do aluno:" + devCamila.getId());
         System.out.println("XP:" + devCamila.calcularTotalXp());
 
         System.out.println("-------");
 
         Dev devJoao = new Dev();
         devJoao.setNome("Joao");
+        devJoao.setId(2);
         devJoao.inscreverBootcamp(bootcamp);
-        System.out.println("Conteúdos Inscritos João:" + devJoao.getConteudosInscritos());
+        System.out.println("Conteúdos Inscritos João:" + devJoao.getConteudosInscritos() + " Id do aluno:" + devJoao.getId());
         devJoao.progredir();
         devJoao.progredir();
         devJoao.progredir();
         System.out.println("-");
         System.out.println("Conteúdos Inscritos João:" + devJoao.getConteudosInscritos());
-        System.out.println("Conteúdos Concluidos João:" + devJoao.getConteudosConcluidos());
+        System.out.println("Conteúdos Concluidos João:" + devJoao.getConteudosConcluidos() + " Id do aluno:" + devJoao.getId());
         System.out.println("XP:" + devJoao.calcularTotalXp());
 
     }
